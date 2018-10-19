@@ -50,8 +50,8 @@ class Product {
       const index = this.products.indexOf(product);
       this.products[index].name = data['name'] || product.name;
       this.products[index].type = data['type'] || product.type;
-      this.products[index].quantity = data['quantity'] || product.takeAway;
-      this.products[index].price = data['price'] || product.takeAway;
+      this.products[index].quantity = data['quantity'] || product.quantity;
+      this.products[index].price = data['price'] || product.price;
       this.products[index].modifiedDate = moment.now()
       return this.products[index];
    }
